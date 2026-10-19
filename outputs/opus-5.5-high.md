@@ -1,0 +1,17 @@
+# AI-Assisted Writing: Essential Guidelines
+
+AI detectors try to guess whether a piece of writing looks like something a language model produced. They do this in a few different ways. One is predictability, which means checking how likely each word choice is. Another is looking at writing patterns: how long the sentences are, how they're built, what vocabulary shows up and how often things repeat. Detectors also look at grammar and phrasing, and at how consistent the language stays across the whole piece. On top of that, many tools use a classifier trained on examples of both human and AI writing, and the score you see comes from the patterns it picked up during that training. The catch is that none of this is fully reliable. Human writing gets flagged, and AI writing gets through undetected, so a detector score is an estimate rather than proof.
+
+That's worth keeping in mind when you decide how to use AI in the first place. The best starting point is your own thinking. Bring your own arguments, opinions, notes and examples, and let the AI work with those instead of producing them for you. Your voice matters too. If the edited version uses words or a tone you would never use yourself, change it back to something closer to how you normally communicate.
+
+Substance should come before polish. A strong argument is specific and relevant to the point you're making, it follows logically, and it has evidence behind it. Generic writing does the opposite, so cut repeated explanations, transitions that don't lead anywhere, and claims too vague to mean much. After that, check everything the AI hands back. Facts and citations need verifying, and so do any assumptions the AI may have filled in on its own.
+
+It also helps to hold on to your drafts. Notes and revision history show how the piece developed, and they work as evidence of your writing process if anyone ever asks. And whatever you do, follow the rules that apply to you. Universities and workplaces may have their own policies on AI assistance, and those take priority.
+
+In practice, the workflow is fairly simple. Write down your rough ideas first, even if they're messy. Then ask the AI to organize them, clarify what you're trying to say and improve the wording. Go through each change it makes and correct anything that misrepresents your thinking. Once the content is right, do your own edit for clarity, accuracy and the voice you intended. The last step is to verify the final text and keep your drafts alongside it.
+
+If you want something you can reuse, a prompt like this one covers the main points:
+
+> Help me improve my writing while preserving my original ideas, reasoning and intended voice. Improve clarity, structure, grammar and readability, but don't invent facts, examples, experiences or references. Avoid generic wording, unnecessary repetition and excessive formality. Keep the nuance and don't change what I mean. If a claim isn't supported or some information is missing, flag it and ask me about it. When a change is significant, explain it if that's useful. Accurate, natural and substantive writing matters more to me than stylistic polish. Don't promise or optimize for any AI detector score.
+
+The bottom line is that AI should help you express your thinking, not replace it. It can be tempting to add mistakes on purpose or swap words at random to push a detection score down, but those tactics aren't reliable, and they tend to make the writing worse.
