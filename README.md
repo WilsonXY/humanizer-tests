@@ -6,13 +6,29 @@ Testing how different models rewrite the same text with the [wilson-humanizer](h
 
 ### Results
 
-| Model | ZeroGPT "AI" score | Output | Length |
-| --- | --- | --- | --- |
-| gemini-3.8-flash-high | **0%** | [outputs/gemini-3.8-flash-high.md](outputs/gemini-3.8-flash-high.md) | 2,989 chars, 475 words, 5 paragraphs |
-| gpt-6.1-sol-high | **95.8%** | [outputs/gpt-6.1-sol-high.md](outputs/gpt-6.1-sol-high.md) | 3,032 chars, 502 words, 9 paragraphs |
-| opus-5.5-high | **100%** | [outputs/opus-5.5-high.md](outputs/opus-5.5-high.md) | 3,456 chars, 588 words, 9 paragraphs |
+| Model | ZeroGPT "AI" score | ZeroGPT verdict | Output | Screenshot | Length |
+| --- | --- | --- | --- | --- | --- |
+| gemini-3.8-flash-high | **0%** | Your Text is Human written | [output](outputs/gemini-3.8-flash-high.md) | [screenshot](screenshots/gemini-3.8-flash-high.png) | 2,989 chars, 475 words, 5 paragraphs |
+| gpt-6.1-sol-high | **95.8%** | Your Text is AI/GPT Generated | [output](outputs/gpt-6.1-sol-high.md) | [screenshot](screenshots/gpt-6.1-sol-high.png) | 3,032 chars, 502 words, 9 paragraphs |
+| opus-5.5-high | **100%** | Your Text is AI/GPT Generated | [output](outputs/opus-5.5-high.md) | [screenshot](screenshots/opus-5.5-high.png) | 3,456 chars, 588 words, 9 paragraphs |
 
 All three stayed well inside the 15,000 character limit and turned the bullet lists into paragraphs as asked.
+
+### Screenshots
+
+**gemini-3.8-flash-high: 0%**
+
+![ZeroGPT result for gemini-3.8-flash-high: 0%, Human written](screenshots/gemini-3.8-flash-high.png)
+
+**gpt-6.1-sol-high: 95.8%**
+
+![ZeroGPT result for gpt-6.1-sol-high: 95.8%, AI/GPT Generated](screenshots/gpt-6.1-sol-high.png)
+
+**opus-5.5-high: 100%**
+
+![ZeroGPT result for opus-5.5-high: 100%, AI/GPT Generated](screenshots/opus-5.5-high.png)
+
+In the GPT and Opus screenshots, ZeroGPT highlights almost every sentence in yellow, starting with the `#` title line. The markdown was pasted as raw text, so the `#` and `>` characters were part of what ZeroGPT checked.
 
 ### What each model did
 
@@ -32,6 +48,7 @@ All three stayed well inside the 15,000 character limit and turned the bullet li
 
 - One run per model, one source text and one detector. Running the same prompt again could give a different output and a different score.
 - ZeroGPT wasn't cross-checked against other detectors.
+- The outputs were pasted with their markdown syntax still in them. The GPT and Opus outputs have a `#` title (Opus also has a `>` blockquote), while the Gemini output is plain paragraphs. That difference might have affected the scores too.
 - The source text itself says no detector is perfectly reliable, and these scores should be read that way.
 
 ### Prompt used
