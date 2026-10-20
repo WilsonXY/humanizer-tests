@@ -201,7 +201,7 @@ Both stayed well inside the 15,000 character limit and turned the bullet lists i
 - The wilson-humanizer skill was changed on 2026-10-20, after Test 1, so the Test 1 opus-5.5-high output and this one may not come from the same version of the skill.
 - As in Test 1, the outputs were scanned with their markdown (`#`, `##` and `>`) still in them.
 - ZeroGPT and Grammarly were run signed-out from a script in a headless browser, pasting each file as-is. The first ZeroGPT attempt for blader crashed before its score was recorded and was thrown out; the 85.3% is from the rerun. QuillBot and GPTZero block automated browsers (Cloudflare and hCaptcha), so those two were run by hand in a normal browser, signed in.
-- GPTZero shows "Text changed, scan to update" in both screenshots, and both scans were done in the same document, which is still named after the blader file. The character counts it shows (2,600 and 3,852) are a little under the files' (2,612 and 3,869), probably because blank lines were dropped when pasting. The "Text changed" label might mean the text in the box was edited after the scan ran. The scores in the table are the ones GPTZero reported for each paste.
+- Both GPTZero scans were done in the same document, so the file name at the top of both screenshots is the blader one. The text in the editor shows which output each scan was for. The character counts GPTZero shows (2,600 and 3,852) are a little under the files' (2,612 and 3,869), probably because blank lines were dropped when pasting.
 - QuillBot counted 409 and 641 words instead of 415 and 648, since it doesn't count the markdown markers as words.
 
 ### Screenshots
